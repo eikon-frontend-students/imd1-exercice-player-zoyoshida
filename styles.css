@@ -1,3 +1,51 @@
+body {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  overflow-y: hidden;
+  height: 100%;
+}
+
+img.cat {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 900px;
+}
+
+img.eyeball1 {
+  position: absolute;
+  bottom: 640px;
+  right: 350px;
+}
+
+img.eyeball2 {
+  position: absolute;
+  bottom: 645px;
+  right: 240px;
+}
+
+button.prev {
+  position: absolute;
+  bottom: 500px;
+  right: 350px;
+}
+
+button.next {
+  position: absolute;
+  bottom: 520px;
+  right: 200px;
+}
+
+button.pauseplay {
+  position: absolute;
+  bottom: 510px;
+  right: 290px;
+}
+
 /* Cacher le bouton pause en mode PAUSE */
 #pause-icon {
   display: none;
