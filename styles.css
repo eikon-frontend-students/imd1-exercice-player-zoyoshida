@@ -1,4 +1,6 @@
 body {
+  cursor: url(hands/hand_cursor.cur), auto;
+
   background-image: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
