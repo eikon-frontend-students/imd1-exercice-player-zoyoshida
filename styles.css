@@ -1,6 +1,6 @@
 @-webkit-keyframes spin {
 }
-
+/* fonts*/
 @font-face {
   font-family: freakshow;
   src: url(/font/Freakshow.ttf);
@@ -19,17 +19,36 @@ body {
   height: 100%;
 }
 
+/*dolphin background*/
+.dolphins {
+  position: absolute;
+  size: 100%;
+  z-index: -1;
+}
+
+.playing .dolphins {
+  animation: spin infinite 30s linear;
+}
+
+/*ce qui se passe dérrière*/
+
+.currentsong {
+  left: 600px;
+}
+
 #cover {
   display: flex;
   margin: 20px auto;
+  width: 500px;
 }
 
 #track-title {
   text-align: center;
-
   color: white;
   font-size: 60px;
   font-family: freakshow, sans-serif;
+  margin: 32px;
+  padding: 0px;
 }
 
 #track-artist {
@@ -43,17 +62,15 @@ img.cat {
   right: 0px;
   height: 900px;
 }
-
+/* Ce qui fait tourner les yeux*/
 img.eyeball1 {
   position: absolute;
   bottom: 640px;
   right: 350px;
 }
 
-img.eyeball1 {
-  position: absolute;
-  bottom: 640px;
-  right: 350px;
+.playing img.eyeball1 {
+  animation: spin infinite 2s linear;
 }
 
 img.eyeball2 {
@@ -62,29 +79,81 @@ img.eyeball2 {
   right: 240px;
 }
 
+.playing img.eyeball2 {
+  animation: spin infinite 3s linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* les boutons */
+.time {
+  display: none;
+}
+
 button.prev {
   position: absolute;
-  bottom: 500px;
+  bottom: 480px;
   right: 350px;
+
+  background-color: transparent;
+  border: none;
+  color: transparent;
 }
 
 button.next {
   position: absolute;
-  bottom: 520px;
+  bottom: 505px;
   right: 200px;
+
+  background-color: transparent;
+  border: none;
+  color: transparent;
 }
 
 button.pauseplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  bottom: 510px;
-  right: 290px;
+  bottom: 490px;
+  right: 280px;
+
+  background-color: transparent;
+  border: none;
+  color: transparent;
 }
+
+/* ayooo la playliste dans la box.*/
 
 #playlist {
   display: flex;
   position: absolute;
-  bottom: 200px;
-  right: 100px;
+  bottom: -20px;
+  right: 50px;
+  max-width: 300px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  list-style: none;
+
+  transform: rotate(0.09turn);
+}
+
+#playlist .playlist-cover {
+  width: 130px;
+  margin: 4px;
+  border-radius: 15px;
+}
+#playlist .track-artist {
+  display: none;
+}
+#playlist .track-title {
+  display: none;
 }
 
 /* Cacher le bouton pause en mode PAUSE */
@@ -103,12 +172,17 @@ button.pauseplay {
 }
 
 /* Changer le style du bouton like */
+#like {
+  display: none;
+}
 #like.liked {
   background-color: green;
 }
 
 /* Sliders */
 input[type="range"] {
+  display: none; /*j'le cache.*/
+
   -webkit-appearance: none;
   margin-right: 15px;
   width: 200px;
