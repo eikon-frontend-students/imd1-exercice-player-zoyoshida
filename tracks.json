@@ -1,14 +1,32 @@
 [
   {
-    "title": "Outer Wilds",
-    "artist": "Andrew Prahlow",
-    "src": "music/OuterWilds.mp3",
-    "cover": "covers/OuterWilds.jpg"
+    "title": "Lose you",
+    "artist": "Bully (feat. Soccer Mommy)",
+    "src": "music/loseyou.mp3",
+    "cover": "covers/loseyou.jpeg"
   },
   {
-    "title": "Gucci Gang",
-    "artist": "Lil Pump",
-    "src": "music/GucciGang.mp3",
-    "cover": "covers/GucciGang.png"
+    "title": "ПАДИК",
+    "artist": "кис-кис",
+    "src": "music/падик.mp3",
+    "cover": "covers/entrance.jpg"
+  },
+  {
+    "title": "Pink Pony Club",
+    "artist": "Chapelle Roan",
+    "src": "music/pinkponyclub.mp3",
+    "cover": "covers/chapelleroan.jpeg"
+  },
+  {
+    "title": "PLAY DEAD! PLAY DEAD! PLAY DEAD!",
+    "artist": "Vylet Pony",
+    "src": "music/playdead.mp3",
+    "cover": "covers/playdead.jpeg"
+  },
+  {
+    "title": "She likes a boy",
+    "artist": "Nxdia",
+    "src": "music/shelikesaboy.mp3",
+    "cover": "covers/shelikesaboy.jpg"
   }
 ]

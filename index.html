@@ -3,29 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Player Musique</title>
+    <title>The cat's box</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img id="cover" alt="cover" />
+    <img class="dolphins" src="/images/dolphins.png" alt="dolphins" />
 
-    <h3 id="track-title">Titre</h3>
-    <p id="track-artist">Artiste</p>
+    <img
+      class="cat"
+      src="images/thecatfull.png"
+      alt="just a cat. a funny cat."
+    />
+
+    <img class="eyeball1" src="images/eyeball.png" alt="the cat's eyeball" />
+    <img class="eyeball2" src="images/eyeball.png" alt="the cat's eyeball" />
+
+    <div class="currentsong">
+      <h3 id="track-title">Titre</h3>
+      <p id="track-artist">Artiste</p>
+      <img id="cover" alt="cover" />
+    </div>
     <div>
-      <span id="track-current-time">0:00</span>
+      <span class="time" id="track-current-time">0:00</span>
       /
-      <span id="track-duration">0:00</span>
+      <span class="time" id="track-duration">0:00</span>
     </div>
 
     <div>
-      <button id="prev">Précédent</button>
-      <button id="play-pause">
-        <span id="play-icon">▶️</span>
-        <span id="pause-icon">⏸️</span>
+      <button class="prev" id="prev">
+        <img src="/images/back.png" alt="" />
       </button>
-      <button id="next">Suivant</button>
-      <button id="like">❤️</button>
+      <button class="pauseplay" id="play-pause">
+        <span id="play-icon"
+          ><img src="/images/Play.png" alt="play button"
+        /></span>
+        <span id="pause-icon"
+          ><img src="/images/Pause.png" alt="pause button"
+        /></span>
+      </button>
+      <button class="next" id="next">
+        <img src="/images/Fast forward.png" alt="" />
+      </button>
+      <button class="" id="like">❤️</button>
     </div>
 
     <input type="range" id="progress-bar" value="0" min="0" step="1" />
@@ -34,6 +54,7 @@
     <ul id="playlist">
       <template id="track-template">
         <li class="track">
+          <img class="playlist-cover" />
           <h4 class="track-title">Titre</h4>
           <p class="track-artist">Artiste</p>
         </li>
