@@ -1,3 +1,11 @@
+@-webkit-keyframes spin {
+}
+
+@font-face {
+  font-family: freakshow;
+  src: url(/font/Freakshow.ttf);
+}
+
 body {
   cursor: url(hands/hand_cursor.cur), auto;
 
@@ -11,11 +19,35 @@ body {
   height: 100%;
 }
 
+#cover {
+  display: flex;
+  margin: 20px auto;
+}
+
+#track-title {
+  text-align: center;
+
+  color: white;
+  font-size: 60px;
+  font-family: freakshow, sans-serif;
+}
+
+#track-artist {
+  color: white;
+  text-align: center;
+}
+
 img.cat {
   position: absolute;
   bottom: 0px;
   right: 0px;
   height: 900px;
+}
+
+img.eyeball1 {
+  position: absolute;
+  bottom: 640px;
+  right: 350px;
 }
 
 img.eyeball1 {
@@ -46,6 +78,13 @@ button.pauseplay {
   position: absolute;
   bottom: 510px;
   right: 290px;
+}
+
+#playlist {
+  display: flex;
+  position: absolute;
+  bottom: 200px;
+  right: 100px;
 }
 
 /* Cacher le bouton pause en mode PAUSE */
